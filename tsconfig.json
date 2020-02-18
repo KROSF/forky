@@ -18,7 +18,8 @@
       "@Navigation/*": ["src/navigation/*"],
       "@Assets/*": ["assets/*"],
       "@Utils/*": ["src/utils/*"],
-      "@Env": ["src/utils/enviroment"]
+      "@Env": ["src/utils/enviroment"],
+      "react-native-easy-toast": ["src/types/react-native-easy-toast"]
     }
   },
   "includes": ["**/*.d.ts"]
