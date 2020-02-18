@@ -52,19 +52,15 @@ type AuthSessionResult = {
 }
 
 export const getGitHubToken = async () => {
-  try {
-    const { type, params } = (await AuthSession.startAsync({
-      authUrl: authUrl(),
-    })) as AuthSessionResult
+  const { type, params } = (await AuthSession.startAsync({
+    authUrl: authUrl(),
+  })) as AuthSessionResult
 
-    if (type !== 'success') {
-      throw new Error(type)
-    }
-
-    const { access_token } = await getAccessTokenFromCode(params.code)
-
-    return access_token
-  } catch ({ message }) {
-    throw new Error(message)
+  if (type !== 'success') {
+    throw new Error(type)
   }
+
+  const { access_token } = await getAccessTokenFromCode(params.code)
+
+  return access_token
 }
