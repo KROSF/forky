@@ -6,21 +6,19 @@ type LoadingProps = {
   visible: boolean
 }
 
-const View = styled.View`
+const Container = styled.View`
   justify-content: center;
   align-items: center;
 `
 
-const Loading = ({ visible }: LoadingProps) => {
+export default ({ visible }: LoadingProps) => {
   return (
     <Portal>
       <Modal visible={visible} dismissable={false}>
-        <View>
+        <Container>
           <ActivityIndicator size="large" />
-        </View>
+        </Container>
       </Modal>
     </Portal>
   )
 }
-
-export default Loading

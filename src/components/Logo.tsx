@@ -6,8 +6,6 @@ const Image = styled.Image`
   height: 180px;
   margin-top: ${({ theme }) => theme.spacing.marginTop};
 `
-const Logo = () => {
+export default () => {
   return <Image source={logo} resizeMode="contain" />
 }
-
-export default Logo

@@ -1378,6 +1378,13 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
+"@krosben/react-native-gravatar@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@krosben/react-native-gravatar/-/react-native-gravatar-0.0.1.tgz#f8bffe014c8b22b6b4b572349f5542e68d0f8ef8"
+  integrity sha512-cKOwG++Rea+su5JONLBKEqkhgcq/nBfDWRTmmlJ/JZY0pBcY6GHND/46yJ/RnLdzQNc9nzjCOxIdZxQJxJYCOw==
+  dependencies:
+    blueimp-md5 "^2.12.0"
+
 "@marionebl/sander@^0.6.0":
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/@marionebl/sander/-/sander-0.6.1.tgz#1958965874f24bc51be48875feb50d642fc41f7b"
@@ -2310,7 +2317,7 @@ bindings@^1.5.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
-blueimp-md5@^2.10.0:
+blueimp-md5@^2.10.0, blueimp-md5@^2.12.0:
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/blueimp-md5/-/blueimp-md5-2.12.0.tgz#be7367938a889dec3ffbb71138617c117e9c130a"
   integrity sha512-zo+HIdIhzojv6F1siQPqPFROyVy7C50KzHv/k/Iz+BtvtVzSHXiMXOpq2wCfNkeBqdCv+V8XOV96tsEt2W/3rQ==

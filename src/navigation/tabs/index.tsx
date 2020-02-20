@@ -1,11 +1,11 @@
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import React from 'react'
-import AccountStack from './account'
-import RestaurantsStack from './restaurants'
-import SearchStack from './search'
+import AccountStack from './account_stack'
+import RestaurantsStack from './restaurants_stack'
+import SearchStack from './search_stack'
 import { BottomTabs } from './tabs'
-import TopStack from './top'
+import TopStack from './top_stack'
 
 const Tab = createBottomTabNavigator<BottomTabs>()
 

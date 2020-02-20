@@ -40,7 +40,7 @@ const GoToLoginBtn = styled(Button)`
   width: 70%;
 `
 
-const Guest = () => {
+export default () => {
   const { navigate } = useNavigation<AccountNavigationProp>()
   return (
     <Body centerContent>
@@ -59,5 +59,3 @@ const Guest = () => {
     </Body>
   )
 }
-
-export default Guest

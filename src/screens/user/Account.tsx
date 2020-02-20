@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import Guest from './Guest'
 import Logged from './Logged'
 
-const Account = () => {
+export default () => {
   const { auth } = useFirebase()
   const [isLogin, setLogin] = useState<boolean | null>(null)
 
@@ -18,5 +18,3 @@ const Account = () => {
 
   return isLogin ? <Logged /> : <Guest />
 }
-
-export default Account

@@ -32,7 +32,7 @@ const validationSchema = Yup.object().shape({
 
 const initialValues = { email: '', password: '', confirmPassword: '' }
 
-const Register = () => {
+export default () => {
   const { auth } = useFirebase()
   const toast = useRef<ToastType>()
   const { navigate } = useNavigation<AccountNavigationProp>()
@@ -106,5 +106,3 @@ const Register = () => {
     </ScrollView>
   )
 }
-
-export default Register

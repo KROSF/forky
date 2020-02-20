@@ -73,9 +73,9 @@ const Login = () => {
             onSubmit={async ({ email, password }) => {
               try {
                 await auth.signInWithEmailAndPassword(email, password)
+                navigate('Account')
               } catch (e) {
                 toast.current.show(e.message)
-                navigate('Account')
               }
             }}>
             {({

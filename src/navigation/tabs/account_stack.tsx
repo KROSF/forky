@@ -7,12 +7,10 @@ import { AccountStackParamList } from './tabs'
 
 const Stack = createStackNavigator<AccountStackParamList>()
 
-const AccountStack = () => (
+export default () => (
   <Stack.Navigator>
     <Stack.Screen name="Account" component={Account} />
     <Stack.Screen name="Login" component={Login} />
     <Stack.Screen name="Register" component={Register} />
   </Stack.Navigator>
 )
-
-export default AccountStack

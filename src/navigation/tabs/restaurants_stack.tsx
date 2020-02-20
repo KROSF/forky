@@ -5,10 +5,8 @@ import { RestaurantsStackParamList } from './tabs'
 
 const Stack = createStackNavigator<RestaurantsStackParamList>()
 
-const RestaurantsStack = () => (
+export default () => (
   <Stack.Navigator>
     <Stack.Screen name="Restaurants" component={Restaurants} />
   </Stack.Navigator>
 )
-
-export default RestaurantsStack

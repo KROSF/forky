@@ -4,10 +4,8 @@ import React from 'react'
 
 const Stack = createStackNavigator()
 
-const SearchStack = () => (
+export default () => (
   <Stack.Navigator>
     <Stack.Screen name="search" component={Search} />
   </Stack.Navigator>
 )
-
-export default SearchStack

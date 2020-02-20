@@ -6,10 +6,8 @@ export type FirebaseProviderProps = {
   children: React.ReactNode
 }
 
-const FirebaseProvider = ({ children }: FirebaseProviderProps) => (
+export default ({ children }: FirebaseProviderProps) => (
   <FirebaseContext.Provider value={Firebase}>
     {children}
   </FirebaseContext.Provider>
 )
-
-export default FirebaseProvider

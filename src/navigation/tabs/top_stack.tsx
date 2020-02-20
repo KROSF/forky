@@ -4,10 +4,8 @@ import React from 'react'
 
 const Stack = createStackNavigator()
 
-const TopStack = () => (
+export default () => (
   <Stack.Navigator>
     <Stack.Screen name="top-restaurants" component={TopRestaurants} />
   </Stack.Navigator>
 )
-
-export default TopStack
